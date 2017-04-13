@@ -227,11 +227,11 @@ if('2' in choice):
 
 
 ###Confirm by Searching Payload in Web Page###
-        heer = custom.check()
+        heer = xss_attack
         try:
             mam = myopener.open(host+exploi).read()
             found = False
-            for payload in heer.hit:
+            for payload in heer:
                 if payload in mam:
                     found = True
             if found:                
@@ -248,6 +248,7 @@ if('2' in choice):
                 time.sleep (3)
                 for cookie in cj:
                     print ("\033[1;32m==>\033[1;m", cookie)
+                    sys.exit()
             else:
                 print ("\033[1;31m[-] False Positive\033[1;m")
                 
