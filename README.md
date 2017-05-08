@@ -7,6 +7,8 @@ XSSight is an XSS Scanner and Payload Injector.
 ##### Scanning for payload
 
 ```
+root@kali:~# pip install -r requirements.txt
+
 root@kali:~# python /root/XSSight/xssight.py
 	    .-'^`\                                        /`^'-.
 	  .'   ___\                                      /___   `.
